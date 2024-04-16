@@ -1,17 +1,15 @@
 import {View, TouchableOpacity, Text, Alert} from 'react-native';
-import {useState} from 'react';
 import React from 'react';
 
 function UIButton(props) {
-  const {title, isChecked} = props;
-  const [isSelected, setIsSelected] = useState(isChecked);
+  const {title, isChecked, onPress} = props;
 
   return (
     <TouchableOpacity
-      onPress={() => setIsSelected(!isSelected)}
+      onPress={onPress}
       style={{
-        borderColor: isSelected == true ? 'red' : '#fff',
-        backgroundColor: isSelected == true ? '#fff' : 'transparent',
+        borderColor: isChecked == true ? 'red' : '#fff',
+        backgroundColor: isChecked == true ? '#fff' : 'transparent',
         borderWidth: 1,
         padding: 10,
         marginHorizontal: 20,
@@ -20,7 +18,7 @@ function UIButton(props) {
         borderRadius: 10,
         margin: 5,
       }}>
-      {isSelected == true ? (
+      {isChecked == true ? (
         <Text style={{color: 'red', fontWeight: 'bold'}}>{title}</Text>
       ) : (
         <Text style={{color: 'white'}}>{title}</Text>

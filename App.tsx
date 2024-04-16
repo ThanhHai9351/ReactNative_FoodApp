@@ -5,14 +5,12 @@ import {
   Text,
   View,
 } from 'react-native';
-import Dashboard from './screens/Dashboard';
-
-
+import {FoodList} from './screens';
 
 function App(): React.JSX.Element {
   return (
     <View style={{flex: 1}}>
-      <Dashboard />
+      <FoodList />
     </View>
   );
 }
