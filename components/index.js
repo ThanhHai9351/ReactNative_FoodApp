@@ -1,3 +1,4 @@
 import UIButton from './UIButton';
+import FoodItem from './FoodItem';
 
-export {UIButton};
+export {UIButton, FoodItem};

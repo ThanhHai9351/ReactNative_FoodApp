@@ -60,7 +60,7 @@ function Dashboard() {
           />
         </View>
         <View style={{flex: 20, alignItems: 'center'}}>
-          <Text style={{color: '#fff'}}>Introduce to action</Text>
+          <Text style={{color: '#fff'}}>Introduce an to action</Text>
           <Text
             style={{
               color: '#fff',

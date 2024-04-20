@@ -23,7 +23,10 @@ function Register(props) {
   const [rePassword, setRePassword] = useState('');
 
   const handleLogin = () => {
-    Alert.alert('Login Success');
+    Alert.alert(
+      'Thông báo thông tin đăng ký!',
+      `email: ${email} - password: ${password}`,
+    );
   };
 
   const validateRePassword = (password, rePassword) => {
