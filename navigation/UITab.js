@@ -48,7 +48,6 @@ function UITab(props) {
       <Tab.Screen name={'Dashboard'} component={Dashboard} />
       <Tab.Screen name={'ProductGrid'} component={ProductGrid} />
       <Tab.Screen name={'FoodList'} component={FoodList} />
-      <Tab.Screen name={'Profile'} component={Profile} />
       <Tab.Screen name={'Setting'} component={Setting} />
     </Tab.Navigator>
   );
