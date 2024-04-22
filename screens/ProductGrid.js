@@ -92,6 +92,7 @@ function ProductGrid() {
         numColumns={2}
         renderItem={({item, index}) => (
           <ProductItemGrid
+            key={index}
             item={item}
             onPress={() => {
               products[index].isSave = !products[index].isSave;

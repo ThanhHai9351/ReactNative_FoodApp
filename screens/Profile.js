@@ -34,7 +34,7 @@ function Profile() {
           Email: <Text style={{fontWeight: '600'}}>{account.email}</Text>
         </Text>
         <Text style={{color: '#000', fontSize: 15}}>
-          Address:{' '}
+          Address:
           <Text
             style={{
               fontWeight: '600',

@@ -111,7 +111,7 @@ function FoodList() {
       uri: 'https://www.202foodpg.com/image/202foodpg/image/data/haidilao%20logo.jpg',
     },
     {
-      name: 'Manwah',
+      name: 'manwah',
       uri: 'https://tse4.mm.bing.net/th?id=OIP.RQTjmycW-3l1K41urJs3qAHaHa&pid=Api&P=0&h=220',
     },
     {

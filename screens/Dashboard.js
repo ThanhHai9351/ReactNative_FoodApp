@@ -3,7 +3,7 @@ import {images, icons} from '../constants';
 import {Alert, Image, ImageBackground, Text, View} from 'react-native';
 import {UIButton} from '../components';
 
-function Dashboard() {
+function Dashboard(props) {
   const [listButton, setListButton] = useState([
     {
       name: 'toast',
@@ -18,6 +18,9 @@ function Dashboard() {
       isChecked: false,
     },
   ]);
+
+  const {navigation, route} = props;
+  const {navigate, goBack} = navigation;
 
   return (
     <View style={{backgroundColor: 'white', flex: 1}}>
@@ -94,12 +97,15 @@ function Dashboard() {
           ))}
         </View>
         <View style={{flex: 20}}>
-          <UIButton title="Next!" isChecked={false} />
+          <UIButton
+            title="LOGIN"
+            onPress={() => navigate('Login')}
+            isChecked={false}
+          />
           <Text style={{color: '#fff', textAlign: 'center', marginTop: 30}}>
             Don't have account! Please to create account!
           </Text>
           <Text style={{color: '#cdcdcd', textAlign: 'center'}}>
-            {' '}
             Follow me!
           </Text>
         </View>

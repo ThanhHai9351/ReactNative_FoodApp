@@ -20,4 +20,12 @@ export default {
   emailIcon: require('../assets/emailIcon.png'),
   doorIcon: require('../assets/doorIcon.png'),
   paperIcon: require('../assets/paperIcon.png'),
+  settingIcon: require('../assets/settingIcon.png'),
+  settingActiveIcon: require('../assets/settingActiveIcon.png'),
+  homeIcon: require('../assets/homeIcon.png'),
+  homeActiveIcon: require('../assets/homeActiveIcon.png'),
+  eatIcon: require('../assets/eatIcon.png'),
+  eatActiveIcon: require('../assets/eatActiveIcon.png'),
+  boxIcon: require('../assets/boxIcon.png'),
+  boxActiveIcon: require('../assets/boxActiveIcon.png'),
 };

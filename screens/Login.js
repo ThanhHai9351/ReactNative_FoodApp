@@ -21,7 +21,7 @@ function Login(props) {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    Alert.alert('Login Success');
+    navigate('UITab');
   };
 
   const isValid = () => errorEmail == '' && errorPassword == '';
@@ -34,6 +34,9 @@ function Login(props) {
       setKeyboardIsShow(false);
     });
   }, []);
+
+  const {navigation, route} = props;
+  const {navigate, goBack} = navigation;
 
   return (
     <KeyboardAvoidingView
